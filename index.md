@@ -7,8 +7,8 @@ The following is a breif overview of the complete system we are targeting.In a n
 ![The big picture](big_pic.jpg)
 
 We decided to pair the pencil along with an android phone. This is becuase of the following
-1) To communicate with our web servers
-2) Use the microphone in the smartphone to detect when the pen is being used for writing.
+1. To communicate with our web servers
+2. Use the microphone in the smartphone to detect when the pen is being used for writing.
 
 
 
@@ -33,5 +33,5 @@ Now when a user writes some data, the accelerometer sends the axis values ( More
 
 
 ### Issues and pending work
-1) The amplitude gain observed by the mic is very small, hence chances of getting false positives are high. Need to think of another algorithm to identify the pen usage.
-2) Code to send and receive data from the web server needs to be implemented. 
+1. The amplitude gain observed by the mic is very small, hence chances of getting false positives are high. Need to think of another algorithm to identify the pen usage.
+2. Code to send and receive data from the web server needs to be implemented. 
