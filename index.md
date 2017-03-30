@@ -2,7 +2,9 @@
 
 ### The Big Picture
 
-<pic>
+The following is a breif overview of the complete system we are targeting.In a nutshell we are planning on recording data using an accelerometer and sending them using a smartphone to our web servers for further processing and displaying what was written by the pen.
+
+![The big picture](big_pic.jpg)
 
 We decided to pair the pencil along with an android phone. This is becuase of the following
 1) To communicate with our web servers
@@ -16,18 +18,18 @@ we have developed an android app to help with recording the data sent from the s
 
 We have given a start and a stop button to facilitate the start and stop of monitoring the pen.
 
-<pic>
+![Dpen App](normal.png)
 
 
 ### How it works
 When a user wants to use the digital pen, he/she should start monitoring the pen using the start button.This establishes a serial connection with the arduino board as well as starts listening through the mic.
 Now when a user writes some data, the accelerometer sends the axis values ( More information regarding this could be found here.) as well as the mic would pic up some sound signals because of using the pen.Both of the above acts as triggers to start recording the values given out by the accelerometer which could then be sent for processing.
 
-<pic>
+![while writing](writing.png)
 
 
 ### Demo
-<gif>
+![Demo](demo.gif)
 
 
 ### Issues and pending work
