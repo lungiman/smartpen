@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## Smart Pen/Pencil (Assignment 7 Software)
 
-You can use the [editor on GitHub](https://github.com/lungiman/smartpen/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### The Big Picture
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<pic>
 
-### Markdown
+We decided to pair the pencil along with an android phone. This is becuase of the following
+1) To communicate with our web servers
+2) Use the microphone in the smartphone to detect when the pen is being used for writing.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### Dpen App
 
-- Bulleted
-- List
+we have developed an android app to help with recording the data sent from the sensors as well as communicate with the web servers.
 
-1. Numbered
-2. List
+We have given a start and a stop button to facilitate the start and stop of monitoring the pen.
 
-**Bold** and _Italic_ and `Code` text
+<pic>
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### How it works
+When a user wants to use the digital pen, he/she should start monitoring the pen using the start button.This establishes a serial connection with the arduino board as well as starts listening through the mic.
+Now when a user writes some data, the accelerometer sends the axis values ( More information regarding this could be found here.) as well as the mic would pic up some sound signals because of using the pen.Both of the above acts as triggers to start recording the values given out by the accelerometer which could then be sent for processing.
 
-### Jekyll Themes
+<pic>
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lungiman/smartpen/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+### Demo
+<gif>
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+### Issues and pending work
+1) The amplitude gain observed by the mic is very small, hence chances of getting false positives are high. Need to think of another algorithm to identify the pen usage.
+2) Code to send and receive data from the web server needs to be implemented. 
